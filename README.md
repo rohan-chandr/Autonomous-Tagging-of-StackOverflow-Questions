@@ -6,8 +6,8 @@
 
 ## The Data:
 The dataset consists of 3 CSV files with the following formats:
-* Questions:
-** Contains the title, body, creation date, closed date (if applicable), score, and owner ID for all non-deleted Stack Overflow questions whose Id is a multiple of 10.
+1.Questions:
+  * Contains the title, body, creation date, closed date (if applicable), score, and owner ID for all non-deleted Stack Overflow questions whose Id is a multiple of 10.
 ** Has the format: Id, OwnerUserId, CreationDate, ClosedDate, Score, Title, Body
 * Answers:
 **Contains the body, creation date, score, and owner ID for each of the answers to these questions. The ParentId column links back to the Questions table.
