@@ -1,21 +1,12 @@
 # Autonomous-Tagging-of-StackOverflow-Questions
 ## The Problem:
-* We are given a dataset containing 10% of the questions on Stackoverflow, with Answers and Tags
+* We are given a dataset containing Stackoverflow questions.
 * Given this dataset, we must build a predictive model predicting the tags for each new question encountered
 * The predictive model(s) must have as high an accuracy as possible, given the dataset and it’s limitations
 
 ## The Data:
-The dataset consists of 3 CSV files with the following formats:
-* Questions:
-  * Contains the title, body, creation date, closed date (if applicable), score, and owner ID for all non-deleted Stack Overflow questions whose Id is a multiple of 10.
-  * Has the format: Id, OwnerUserId, CreationDate, ClosedDate, Score, Title, Body
-* Answers:
-  * Contains the body, creation date, score, and owner ID for each of the answers to these questions. The ParentId column links back to the Questions table.
-  * Has the format: Id, OwnerUserId, CreationDate, ParentId, Score, Body
-
-* Tags:
-  *  Contains the tags on each of these questions
-  * Has the format: Id,Tag
+The Stacksimple dataset is a set of StackOverFlow programming questions. It was compiled during 2006 and has a large subset of the entire database of questions on the website. It contains two files that are organized with columns containing the features common to each question.
+The dataset consists of 2 CSV files: questions.csv which Contains the Id, CreationDate, ClosedDate, DeletionDate, Score, OwnerUserId, AnswerCount and a second file that contains the question tags mapped to the question ID.
  
-* The dataset can be downloaded at https://www.kaggle.com/stackoverflow/stacksample/data
+* The dataset can be downloaded at https://www.kaggle.com/stackoverflow/stacklite
 
